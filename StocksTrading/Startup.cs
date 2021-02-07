@@ -44,6 +44,8 @@ namespace StocksTrading
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StocksTrading v1"));
             }
 
+            
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

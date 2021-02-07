@@ -108,9 +108,6 @@
             "projectReferences": {
               "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
                 "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
-              },
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj"
               }
             }
           }
@@ -169,7 +166,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
+                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
+              },
+              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj": {
+                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

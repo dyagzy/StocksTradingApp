@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassTests\ClassTests.csproj" />
-    <ProjectReference Include="..\Stock.Repository\Stock.Repository.csproj" />
   </ItemGroup>
 
 </Project>

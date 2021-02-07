@@ -1648,16 +1648,6 @@
         "runtime": {
           "bin/placeholder/ClassTests.dll": {}
         }
-      },
-      "Stock.Repository/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Stock.Repository.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stock.Repository.dll": {}
-        }
       }
     }
   },
@@ -5660,17 +5650,11 @@
       "type": "project",
       "path": "../ClassTests/ClassTests.csproj",
       "msbuildProject": "../ClassTests/ClassTests.csproj"
-    },
-    "Stock.Repository/1.0.0": {
-      "type": "project",
-      "path": "../Stock.Repository/Stock.Repository.csproj",
-      "msbuildProject": "../Stock.Repository/Stock.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "ClassTests >= 1.0.0",
-      "Stock.Repository >= 1.0.0"
+      "ClassTests >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5706,9 +5690,6 @@
           "projectReferences": {
             "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
               "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
-            },
-            "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj": {
-              "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj"
             }
           }
         }

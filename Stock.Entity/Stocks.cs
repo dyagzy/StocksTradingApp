@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StockVest.Entity
 {
-    public class Stock : Security
+    public class Stocks : Security
     {
         public decimal DayHigh { get; set; }
         public decimal DayLow { get; set; }
