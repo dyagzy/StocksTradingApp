@@ -1,0 +1,17 @@
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Stock.Entity.deps.json
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Stock.Entity.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\Stock.Entity.pdb
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\ClassTests.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\bin\Debug\netcoreapp3.1\ClassTests.pdb
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.csprojAssemblyReference.cache
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.AssemblyInfoInputs.cache
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.AssemblyInfo.cs
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.csproj.CoreCompileInputs.cache
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.csproj.CopyComplete
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.dll
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Entity\obj\Debug\netcoreapp3.1\Stock.Entity.pdb

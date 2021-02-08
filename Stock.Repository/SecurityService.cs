@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StockVest.Entity
+namespace Stock.Repository
 {
-    public class Mutual
+    class SecurityService
     {
     }
 }
