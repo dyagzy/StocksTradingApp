@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stock.Repository
 {
-    public interface IStocks
+    public interface IStocksService
     {
         Task CreateStockAsync(Stocks stock);
         IEnumerable<Stocks> GetAll();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stock.Repository
 {
-    public interface ICustomer
+    public interface ICustomerSevice
     {
         Task CreateCustomerAync(Customer customer);
         IEnumerable<Customer> GetAll();

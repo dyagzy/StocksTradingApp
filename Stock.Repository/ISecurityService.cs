@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Stock.Repository
 {
-    public interface ISecurity
+    public interface ISecurityService
     {
         Task CreateSecurityAsync(Security security);
         IEnumerable<Security> GetAll();
-        Security GetById(int securityId);
+        Security GetBySymbol(string symbol);
         Task UpdateSecurity(Security security);
-        Task UpdateSecurity(int securityId);
-        Task Delete(int securityId);
+        Task UpdateSecurity(string symbol);
+        Task Delete(string symbol);
+        IEnumerable<TickerQoute> GetSecurityTickerQoute();
 
 
     }

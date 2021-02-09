@@ -17,3 +17,6 @@ C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Reposito
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\obj\Debug\netcoreapp3.1\Stock.Repository.csproj.CopyComplete
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\obj\Debug\netcoreapp3.1\Stock.Repository.dll
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\obj\Debug\netcoreapp3.1\Stock.Repository.pdb
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\bin\Debug\netcoreapp3.1\Stock.Repository.runtimeconfig.json
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\bin\Debug\netcoreapp3.1\Stock.Repository.runtimeconfig.dev.json
+C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\Stock.Repository\obj\Debug\netcoreapp3.1\Stock.Repository.genruntimeconfig.cache
