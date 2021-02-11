@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StockVest.Entity
 {
-    public class MarketQoutes
+    public class MarketQoutes 
     {
     }
 }
