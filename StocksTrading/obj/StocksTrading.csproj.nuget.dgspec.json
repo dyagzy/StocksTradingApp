@@ -4,222 +4,6 @@
     "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\StocksTrading\\StocksTrading.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj",
-        "projectName": "ClassTests",
-        "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj",
-        "packagesPath": "C:\\Users\\DanielOyagha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\DanielOyagha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[2.1.1, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[2.1.1, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.7.1, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[1.3.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj",
-        "projectName": "Stock.Entity",
-        "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj",
-        "packagesPath": "C:\\Users\\DanielOyagha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\DanielOyagha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj",
-        "projectName": "Stock.Repository",
-        "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj",
-        "packagesPath": "C:\\Users\\DanielOyagha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\DanielOyagha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
-              },
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.8, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\StocksTrading\\StocksTrading.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -247,14 +31,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\ClassTests\\ClassTests.csproj"
+              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj": {
+                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj"
               },
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Entity\\Stock.Entity.csproj"
-              },
-              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj": {
-                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stock.Repository\\Stock.Repository.csproj"
+              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\Stuck.Repository.csproj": {
+                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\Stuck.Repository.csproj"
               }
             }
           }
@@ -306,6 +87,140 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj",
+        "projectName": "Stuck.Entity",
+        "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj",
+        "packagesPath": "C:\\Users\\DanielOyagha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielOyagha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\Stuck.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\Stuck.Repository.csproj",
+        "projectName": "Stuck.Repository",
+        "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\Stuck.Repository.csproj",
+        "packagesPath": "C:\\Users\\DanielOyagha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DanielOyagha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj": {
+                "projectPath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\Stuck.Entity\\Stuck.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Stock.Repository;
+using Stuck.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,15 +28,15 @@ namespace StocksTrading
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<IStocksService, StocksService>();
-            //services.AddTransient<ISecurityService, SecurityService>();
+            
             services.AddScoped<IStocksService, StocksService>();
             services.AddScoped<ISecurityService, SecurityService>();
+
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
-            
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

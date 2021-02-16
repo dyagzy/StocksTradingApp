@@ -15,9 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassTests\ClassTests.csproj" />
-    <ProjectReference Include="..\Stock.Entity\Stock.Entity.csproj" />
-    <ProjectReference Include="..\Stock.Repository\Stock.Repository.csproj" />
+    <ProjectReference Include="..\Stuck.Entity\Stuck.Entity.csproj" />
+    <ProjectReference Include="..\Stuck.Repository\Stuck.Repository.csproj" />
   </ItemGroup>
 
 </Project>
