@@ -11,6 +11,10 @@ namespace Stuck.Entity
         public decimal Shares { get; set; }
         public decimal Total { get; set; }
         public int BrokerageAccountId { get; set; }
-        public virtual Security Security { get; set; }
+
+        //Navigation
+        public  Security Security { get; set; }
+        public BrokerageAccount BrokerageAccount { get; set; }
+
     }
 }

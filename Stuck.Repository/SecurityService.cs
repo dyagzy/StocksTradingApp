@@ -10,6 +10,23 @@ namespace Stuck.Repository
 {
     public class SecurityService : ISecurityService
     {
+
+        private readonly string[] _securitySymbols = {"DANGCOM", "ACCESS", "AFRINSURE", 
+                                                        "AIICO", "ABCTRANS", "GOLDINSURE",
+                                                        "CUSTODIAN", "FIDELITYBK","GUARANTY",
+                                                        "FBNH","JAIZBANK","FCMB", "UNHOMES",
+                                                        "WAPIC","CAPOIL","OANDO","SEPLAT",
+                                                        "ETERNA","CADBURY","FLOURMILL",
+                                                        "HONYFLOUR","GUINNESS","DUNLOP",
+                                                        "DANGSUGAR","NASCON","UNILEVER",
+                                                        "VITAFOAM","NESTLE","PZ","NEIMETH",
+                                                        "NB","MULTITREX", "EVANSMED",
+                                                        "PHARMDEKO","GLAXOSMITH","MAYBAKER"};
+
+
+
+
+
         private readonly ApplicationDbContext _context;
 
         public SecurityService(ApplicationDbContext context)
@@ -23,20 +40,29 @@ namespace Stuck.Repository
             await _context.SaveChangesAsync();
           
         }
-        public Security GetBySymbol(string symbol) => _context.Securities.Where(s => s.Symbol == symbol).FirstOrDefault();
+        public Security GetSecurity(string symbol)
+        {
+           var sec =  _context.Securities.Where(s => s.Symbol == symbol).SingleOrDefault();
+            if (sec == null)
+            {
+                var engine = new StocksEngine();
+                 engine.GetSecurityQoute(symbol);
+            }
+
+            return sec;
+        }
+        
        
 
         public async Task Delete(string symbol)
         {
-            var security = GetBySymbol(symbol);
+            var security = GetSecurity(symbol);
             _context.Remove(security);
             await   _context.SaveChangesAsync();
         }
 
         public IEnumerable<Security> GetAll() => _context.Securities;
        
-
-
         public async Task UpdateSecurity(Security security)
         {
             _context.Update(security);
@@ -45,7 +71,7 @@ namespace Stuck.Repository
 
         public  async Task UpdateSecurity(string symbol)
         {
-            var security = GetBySymbol(symbol);
+            var security = GetSecurity(symbol);
             _context.Update(security);
            await _context.SaveChangesAsync();
         }
@@ -68,5 +94,7 @@ namespace Stuck.Repository
             }).OrderBy(tq => tq.Symbol).ToList();
             
         }
+
+        
     }
 }

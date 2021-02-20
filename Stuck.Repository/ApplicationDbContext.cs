@@ -1,6 +1,5 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using StockVest.Entity;
 using Stuck.Entity;
 using System;
 using System.Collections.Generic;
@@ -25,5 +24,8 @@ namespace Stuck.Repository
         public DbSet<Security> Securities { get; set; }
         public DbSet<MutualFund> MutualFunds { get; set; }
         public DbSet<WatchList> WatchLists { get; set; }
+        public DbSet<CompanyProfile> CompanyProfiles { get; set; }
+        public DbSet<TradingInformation> TradingInformation { get; set; }
+
     }
 }

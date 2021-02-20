@@ -1,4 +1,4 @@
-﻿using StockVest.Entity;
+﻿
 using Stuck.Entity;
 using System;
 using System.Collections.Generic;
@@ -11,11 +11,13 @@ namespace Stuck.Repository
     {
         Task CreateSecurityAsync(Security security);
         IEnumerable<Security> GetAll();
-        Security GetBySymbol(string symbol);
+        Security GetSecurity(string symbol);
         Task UpdateSecurity(Security security);
         Task UpdateSecurity(string symbol);
         Task Delete(string symbol);
         IEnumerable<TickerQoute> GetSecurityTickerQoute();
+       
+
 
 
     }

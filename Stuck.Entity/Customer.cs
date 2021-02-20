@@ -6,6 +6,10 @@ namespace Stuck.Entity
 {
     public class Customer
     {
+        public Customer()
+        {
+            BrokerageAccounts = new List<BrokerageAccount>();
+        }
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,5 +18,7 @@ namespace Stuck.Entity
         public string State { get; set; }
         public int Zip { get; set; }
         public string CustomerCode { get; set; }
+
+        public IEnumerable<BrokerageAccount> BrokerageAccounts { get; set; }
     }
 }

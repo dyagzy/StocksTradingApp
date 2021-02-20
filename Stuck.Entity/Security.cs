@@ -14,5 +14,11 @@ namespace Stuck.Entity
         public string Symbol { get; set; }
         public DateTime RetievalDateTime { get; set; }
         public string Company { get; set; }
+
+        //Navigation  properties
+
+        public IEnumerable<DataPoint> DataPoints { get; set; }
+        public IEnumerable<Order> Orders { get; set; }
+        public IEnumerable<WatchList> WatchLists { get; set; }
     }
 }
