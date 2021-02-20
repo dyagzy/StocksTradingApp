@@ -11,6 +11,6 @@ namespace Stuck.Entity
             throw new NotImplementedException();
         }
 
-       
+        public int Id { get; set; }
     }
 }

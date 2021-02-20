@@ -8,6 +8,7 @@ namespace Stuck.Entity
 {
     public class TradingInformation
     {
+        public int Id { get; set; }
         public string TradingName { get; set; }
         public string TickerSymbol { get; set; }
         public string Sector { get; set; }

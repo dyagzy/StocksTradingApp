@@ -8,6 +8,7 @@ namespace Stuck.Entity
 {
     public class CompanyProfile
     {
+        public int Id { get; set; }
         public string CompanyName { get; set; }
         public string MarketClassification { get; set; }
         public string Sector { get; set; }

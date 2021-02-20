@@ -6,5 +6,6 @@ namespace Stuck.Entity
 {
     public class Exchange
     {
+        public int Id { get; set; }
     }
 }

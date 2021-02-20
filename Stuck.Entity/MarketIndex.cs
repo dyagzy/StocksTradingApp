@@ -6,5 +6,6 @@ namespace Stuck.Entity
 {
     public class MarketIndex
     {
+        public int Id { get; set; }
     }
 }

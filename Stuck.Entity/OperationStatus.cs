@@ -6,5 +6,6 @@ namespace Stuck.Entity
 {
     public class OperationStatus
     {
+        public int Id { get; set; }
     }
 }

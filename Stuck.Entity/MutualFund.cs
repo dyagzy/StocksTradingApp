@@ -6,6 +6,7 @@ namespace Stuck.Entity
 {
     public class MutualFund : Security
     {
+        public int Id { get; set; }
         public int MorningStarRating { get; set; }
     }
 }

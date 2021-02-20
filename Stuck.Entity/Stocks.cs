@@ -6,6 +6,7 @@ namespace Stuck.Entity
 {
     public class Stocks : Security
     {
+        public int Id { get; set; }
         public decimal DayHigh { get; set; }
         public decimal DayLow { get; set; }
         public decimal Dividend { get; set; }

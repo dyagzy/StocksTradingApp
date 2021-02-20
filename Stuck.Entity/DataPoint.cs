@@ -6,5 +6,6 @@ namespace Stuck.Entity
 {
     public class DataPoint
     {
+        public int Id { get; set; }
     }
 }
