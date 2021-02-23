@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Stuck.Entity;
 using System;
@@ -26,7 +27,7 @@ namespace Stuck.Repository
         public DbSet<WatchList> WatchLists { get; set; }
         public DbSet<CompanyProfile> CompanyProfiles { get; set; }
         public DbSet<TradingInformation> TradingInformation { get; set; }
-        public DbSet<UserRegistration> SignUp { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
     }
 }
