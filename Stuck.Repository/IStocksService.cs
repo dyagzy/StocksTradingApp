@@ -15,6 +15,8 @@ namespace Stuck.Repository
         Task UpdateStockAsync(Stocks stocks);
         Task UpdateStockAsync(int stockId);
         Task Delete(int stockId);
+        //Stocks BuyStock(int amount);
+        //Stocks BuyStock(Stocks symbol);
 
     }
 }

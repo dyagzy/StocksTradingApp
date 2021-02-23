@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Stuck.Repository
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -26,6 +26,7 @@ namespace Stuck.Repository
         public DbSet<WatchList> WatchLists { get; set; }
         public DbSet<CompanyProfile> CompanyProfiles { get; set; }
         public DbSet<TradingInformation> TradingInformation { get; set; }
+        public DbSet<UserRegistration> SignUp { get; set; }
 
     }
 }

@@ -18,6 +18,7 @@ namespace StocksTrading
 {
     public class Startup
     {
+        private readonly string AllowedOrigin = "allowedOrigin";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -36,6 +37,11 @@ namespace StocksTrading
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+            services.AddCors(option =>
+            {
+                option.AddPolicy("allowedOrigin", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -54,8 +60,8 @@ namespace StocksTrading
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StocksTrading v1"));
             }
 
-            
 
+            app.UseCors(AllowedOrigin);
             app.UseHttpsRedirection();
 
             app.UseRouting();

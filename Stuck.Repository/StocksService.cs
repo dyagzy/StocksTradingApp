@@ -19,6 +19,7 @@ namespace Stuck.Repository
         {
             await  _context.Stockss.AddAsync(stock);
             await _context.SaveChangesAsync();
+            //return stock;
         }
 
 
@@ -39,6 +40,7 @@ namespace Stuck.Repository
         {
             _context.Update(stocks);
             await _context.SaveChangesAsync();
+
         }
 
         public async Task UpdateStockAsync(int stockId)
