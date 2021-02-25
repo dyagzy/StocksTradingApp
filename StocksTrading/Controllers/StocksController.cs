@@ -35,7 +35,7 @@ namespace StocksTrading.Controllers
             return null;
         }
 
-        [HttpGet]
+      [HttpGet]
       public IActionResult GetById(int id)
         {
 
