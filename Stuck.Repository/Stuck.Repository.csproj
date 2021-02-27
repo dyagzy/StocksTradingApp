@@ -19,9 +19,4 @@
     <ProjectReference Include="..\Stuck.Entity\Stuck.Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dto\" />
-    <Folder Include="Profiles\" />
-  </ItemGroup>
-
 </Project>

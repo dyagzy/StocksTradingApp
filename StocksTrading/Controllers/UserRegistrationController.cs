@@ -18,8 +18,8 @@ namespace StocksTrading.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public UserRegistrationController(ApplicationDbContext context, 
-                                                UserManager<ApplicationUser> userManager, 
+        public UserRegistrationController(ApplicationDbContext context,
+                                                UserManager<ApplicationUser> userManager,
                                                 SignInManager<ApplicationUser> signInManager)
         {
             _context = context;
@@ -40,15 +40,16 @@ namespace StocksTrading.Controllers
 
             try
             {
-               var result = await _userManager.CreateAsync(applicationUser, model.Password);
+                var result = await _userManager.CreateAsync(applicationUser, model.Password);
                 return Ok(result);
             }
             catch (Exception ex)
             {
 
                 throw ex;
-            }
-        }
 
+            }
+
+        }
     }
 }
