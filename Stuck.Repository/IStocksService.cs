@@ -11,16 +11,15 @@ namespace Stuck.Repository
     {
 
 
-        Task<Stocks> CreateStockAsync(Stocks stock);
+        Task CreateStockAsync(Stocks newStock);
         Task<IEnumerable<Stocks>> GetAllAsync();
         Task<Stocks> GetbyIdAsync(int stockId);
         Task UpdateStockAsync(Stocks stocks);
         Task UpdateStockAsync(int stockId);
         Task Delete(int stockId);
+        Task<bool> SaveChangesAsync();
 
-
-
-
+       
 
         //Old Implementation
 

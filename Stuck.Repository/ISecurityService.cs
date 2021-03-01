@@ -16,6 +16,7 @@ namespace Stuck.Repository
         Task UpdateSecurity(string symbol);
         Task Delete(string symbol);
         IEnumerable<TickerQoute> GetSecurityTickerQoute();
+        
        
 
 

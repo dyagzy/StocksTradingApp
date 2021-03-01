@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Stuck.Repository
 {
-    public class SecurityService : ISecurityService
+    public class SecurityService : ISecurityService, IDisposable
     {
 
         private readonly string[] _securitySymbols = {"DANGCOM", "ACCESS", "AFRINSURE", 
@@ -24,16 +24,13 @@ namespace Stuck.Repository
                                                         "PHARMDEKO","GLAXOSMITH","MAYBAKER"};
 
 
-
-
-
         private readonly ApplicationDbContext _context;
 
         public SecurityService(ApplicationDbContext context)
         {
             _context = context;
         }
-        public async  Task CreateSecurityAsync(Security security)
+        public async Task CreateSecurityAsync(Security security)
         {
 
             await _context.Securities.AddAsync(security);
@@ -46,14 +43,14 @@ namespace Stuck.Repository
             if (sec == null)
             {
                 var engine = new StocksEngine();
-                 engine.GetSecurityQoute(symbol);
+                //sec =  engine.GetSecurityQoute(symbol);
+
+                _context.Securities.Add(sec);
             }
 
             return sec;
         }
         
-       
-
         public async Task Delete(string symbol)
         {
             var security = GetSecurity(symbol);
@@ -95,6 +92,29 @@ namespace Stuck.Repository
             
         }
 
-        
+        public void Dispose()
+        {
+
+            Dispose(true);
+            GC.SuppressFinalize(this);
+           
+        }
+        protected virtual  void Dispose(bool disposing)
+        {
+
+            if (disposing)
+            {
+                if (_context != null)
+                {
+                    _context.Dispose();
+                    //_context = null;
+                }
+                
+            }
+           
+        }
+
+
+
     }
 }

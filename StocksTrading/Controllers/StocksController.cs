@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stuck.Entity;
 using Stuck.Repository;
+using Stuck.Repository.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,9 +45,21 @@ namespace StocksTrading.Controllers
         }
 
         [HttpPost]
-        public Task<IActionResult> CreateStock([FromBody] )
+        public async Task<IActionResult> CreateStock([FromBody] StockDto newStockDto)
         {
-            return null;
+
+            if (newStockDto == null)
+            {
+                throw new ArgumentNullException();
+            }
+                var newStock = _mapper.Map<Stocks>(newStockDto);
+                await _stocksService.CreateStockAsync(newStock);
+                await _stocksService.SaveChangesAsync();
+
+            // aftera succesful creation or add,what you should return is a 200 Okay message
+
+            return Ok();
+            
         }
 
         //Old implementation

@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Stuck.Entity
 {
-    public abstract class Security
+    public  class Security
     {
         public int Id { get; set; }
+
+        [Column(TypeName = "decimal (18,2)")]
         public decimal Change { get; set; }
         public decimal PercentChange { get; set; }
         public int Last { get; set; }
@@ -20,7 +23,8 @@ namespace Stuck.Entity
         public IEnumerable<DataPoint> DataPoints { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public IEnumerable<WatchList> WatchLists { get; set; }
-        
+        public IEnumerable<Stocks> Stocks { get; set; }
+
         public Position Position { get; set; }
     }
 }

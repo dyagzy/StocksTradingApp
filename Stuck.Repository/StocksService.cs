@@ -24,13 +24,13 @@ namespace Stuck.Repository
         //plus the market capitalization of that stock
         public async Task<Stocks> GetbyIdAsync(int stockId) => await _context.Stockss.Include(e => e.MarketCap).Where(s => s.Id == stockId).FirstOrDefaultAsync();
 
-
-
-
-
-        public async Task<Stocks> CreateStockAsync(Stocks stock)
+        public async Task CreateStockAsync(Stocks newStock)
         {
-            throw new NotImplementedException();
+            if (newStock == null)
+            {
+                throw new ArgumentNullException(nameof(newStock));
+            }
+            await _context.AddAsync(newStock);
         }
 
         public Task Delete(int stockId)
@@ -49,6 +49,13 @@ namespace Stuck.Repository
         {
             throw new NotImplementedException();
         }
+
+
+        // returns true if 1 or more entries were saved or changed
+        public async Task<bool> SaveChangesAsync() => await _context.SaveChangesAsync() > 0;
+        
+           
+        
 
 
 
