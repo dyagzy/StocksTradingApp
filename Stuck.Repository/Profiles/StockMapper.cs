@@ -13,7 +13,11 @@ namespace Stuck.Repository.Profiles
     {
         public StockMapper()
         {
-            CreateMap<Stocks, StockDto>();
+            
+            CreateMap<StockDto, Stock>().ReverseMap();
+
+          
+          
         }
     }
 }

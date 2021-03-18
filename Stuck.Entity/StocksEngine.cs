@@ -13,7 +13,7 @@ namespace Stuck.Entity
         private const string BaseUrl_2 = "https://marketdataapi.nse.com.ng:8447/v2/api/index/indexmembers.json?s=ASI&_t=Dud70!kl";
         private const string BaseUrl_3 = "http://marketdataapi.nse.com.ng/version/product.{format}?{parameters}_t={token}";
        
-        private readonly string _Separator = "&stock=";
+        //private readonly string _Separator = "&stock=";
 
 
         public int Id { get; set; }

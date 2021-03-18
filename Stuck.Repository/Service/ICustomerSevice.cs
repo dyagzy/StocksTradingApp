@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stuck.Repository
+namespace Stuck.Repository.Service
 {
     public interface ICustomerSevice
     {

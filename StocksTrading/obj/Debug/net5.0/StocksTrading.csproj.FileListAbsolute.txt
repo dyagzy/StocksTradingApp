@@ -63,7 +63,6 @@ C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Stuck.Repository.pdb
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Humanizer.dll
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\obj\Debug\net5.0\StocksTrading.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\DanielOyagha\Documents\Personal\Projects\StockTradingApp\StocksTrading\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

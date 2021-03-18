@@ -10,7 +10,7 @@ using Stuck.Repository;
 namespace Stuck.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210301212515_firstMigration")]
+    [Migration("20210302095818_firstMigration")]
     partial class firstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -592,7 +592,7 @@ namespace Stuck.Repository.Migrations
                     b.Property<int>("ExchangeId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Last")
+                    b.Property<int>("Lastings")
                         .HasColumnType("int");
 
                     b.Property<decimal>("MarketCap")
@@ -601,7 +601,7 @@ namespace Stuck.Repository.Migrations
                     b.Property<int?>("MutualFundId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Open")
+                    b.Property<decimal>("Opening")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("PercentChange")

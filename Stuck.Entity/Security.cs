@@ -23,7 +23,7 @@ namespace Stuck.Entity
         public IEnumerable<DataPoint> DataPoints { get; set; }
         public IEnumerable<Order> Orders { get; set; }
         public IEnumerable<WatchList> WatchLists { get; set; }
-        public IEnumerable<Stocks> Stocks { get; set; }
+        public IEnumerable<Stock> Stocks { get; set; }
 
         public Position Position { get; set; }
     }

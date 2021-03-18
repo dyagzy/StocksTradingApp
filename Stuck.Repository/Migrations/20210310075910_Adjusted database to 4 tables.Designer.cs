@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Stuck.Repository;
 
 namespace Stuck.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210310075910_Adjusted database to 4 tables")]
+    partial class Adjusteddatabaseto4tables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -482,14 +484,29 @@ namespace Stuck.Repository.Migrations
                     b.Property<decimal>("AverageVolume")
                         .HasColumnType("decimal (18,2)");
 
-                    b.Property<int?>("BalancesId")
-                        .HasColumnType("int");
+                    b.Property<decimal>("Change")
+                        .HasColumnType("decimal (18,2)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<decimal>("DayHigh")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("DayLow")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<decimal>("Dividend")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ExchangeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Lastings")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("MarketCap")
                         .HasColumnType("decimal (18,2)");
@@ -503,11 +520,14 @@ namespace Stuck.Repository.Migrations
                     b.Property<decimal>("Opening")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<decimal>("PercentChange")
+                        .HasColumnType("decimal (18,2)");
+
+                    b.Property<DateTime>("RetievalDateTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<int?>("SecurityId")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("SellingPrice")
-                        .HasColumnType("decimal (18,2)");
 
                     b.Property<string>("Symbol")
                         .HasColumnType("nvarchar(max)");
@@ -515,14 +535,26 @@ namespace Stuck.Repository.Migrations
                     b.Property<decimal>("Trades")
                         .HasColumnType("decimal (18,2)");
 
+                    b.Property<decimal>("Volume")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("YearHigh")
+                        .HasColumnType("decimal (18,2)");
+
                     b.Property<decimal>("YearLow")
+                        .HasColumnType("decimal (18,2)");
+
+                    b.Property<decimal>("_52WeeksHigh")
+                        .HasColumnType("decimal (18,2)");
+
+                    b.Property<decimal>("_52WeeksLow")
                         .HasColumnType("decimal (18,2)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BalancesId");
-
                     b.HasIndex("CustomerId");
+
+                    b.HasIndex("ExchangeId");
 
                     b.HasIndex("MutualFundId");
 
@@ -720,13 +752,15 @@ namespace Stuck.Repository.Migrations
 
             modelBuilder.Entity("Stuck.Entity.Stock", b =>
                 {
-                    b.HasOne("Stuck.Entity.Balance", "Balances")
-                        .WithMany()
-                        .HasForeignKey("BalancesId");
-
                     b.HasOne("Stuck.Entity.Customer", null)
                         .WithMany("Stocks")
                         .HasForeignKey("CustomerId");
+
+                    b.HasOne("Stuck.Entity.Balance", "Exchange")
+                        .WithMany()
+                        .HasForeignKey("ExchangeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Stuck.Entity.MutualFund", "MutualFund")
                         .WithMany("Stocks")
@@ -736,7 +770,7 @@ namespace Stuck.Repository.Migrations
                         .WithMany("Stocks")
                         .HasForeignKey("SecurityId");
 
-                    b.Navigation("Balances");
+                    b.Navigation("Exchange");
 
                     b.Navigation("MutualFund");
 

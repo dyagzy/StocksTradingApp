@@ -18,6 +18,6 @@ namespace Stuck.Entity
 
         //Naviagtion property
 
-        public IEnumerable<Stocks> Stocks { get; set; }
+        public IEnumerable<Stock> Stocks { get; set; }
     }
 }

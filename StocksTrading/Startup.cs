@@ -10,6 +10,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Stuck.Repository;
+using Stuck.Repository.Infrastructure;
+using Stuck.Repository.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,24 +35,42 @@ namespace StocksTrading
             
             services.AddScoped<IStocksService, StocksService>();
             services.AddScoped<ISecurityService, SecurityService>();
+            services.AddAutoMapper(typeof(Startup));
 
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentityCore<ApplicationUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            // Configure Identity
 
-            services.Configure<IdentityOptions>(options =>
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
-                options.Password.RequireDigit = false;
-                options.Password.RequiredLength = 4;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequiredLength = 5;
+            }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+            
+            //configure authetication
 
-            });
+            services.AddAuthentication( auth =>
+            {
+                auth.DefaultAuthenticateScheme = jwr
+            })
+
+
+            //services.AddIdentityCore<ApplicationUser>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //services.Configure<IdentityOptions>(options =>
+            //{
+            //    options.Password.RequireDigit = false;
+            //    options.Password.RequiredLength = 4;
+            //    options.Password.RequireNonAlphanumeric = false;
+            //    options.Password.RequireLowercase = false;
+            //    options.Password.RequireUppercase = false;
+
+            //});
 
             
             services.AddCors(option =>

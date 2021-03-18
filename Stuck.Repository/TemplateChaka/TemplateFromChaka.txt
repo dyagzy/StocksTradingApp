@@ -1,0 +1,117 @@
+
+
+
+     
+**************************  USER STORY  ************************
+
+ user registers, u get the necessary information and save to the users table. 
+
+after login your tries to fund his account, deposit information is saved into 
+transactions and his balance is then updated on balance table 
+
+user navigates to a stock, places an order the order is saved to the orders table. 
+
+user wants sell his stock, navigates to the stock page place an order to sell, 
+this is created in the orders table then his balance is then updated
+
+user goes to withdraw page to withdraw his money, the transaction is also saved in the transactions table
+
+do you understand this part. for the fields that are required for user registration, 
+anything u believe is essential
+
+for the transactions table, the amount, the user id and anything u believe is also essential
+
+for 
+
+
+
+
+
+
+You can create a MOC data to respresnet the NSE Api
+
+
+
+
+LIST OF TABLES (4 TABLES)
+
+USER TABLE ====> to contain customer information/track login
+
+BALANCE TABLE ===> to track customer current balance 
+
+TRANSCATION TBALE ===> to track withdrawl and deposits
+
+ORDERS TABLE ====> for buying and selling of stocks
+
+
+ENUMS
+
+OrderType
+
+Sell
+Buy
+
+
+
+
+
+USER / CUSTOMER 
+UserId or any other fields youthink are useful
+
+
+
+
+TRANSACTION
+
+1. Include type, deposit or withdrawal
+2. user id, 
+3. the stock symbol, 
+4. number of shares, 
+5. amount the user bought
+6. it at + anything else u think is essential
+
+
+
+ORDER TYPE 
+
+1. buy or a sell
+2. UserId
+
+BALANCE 
+
+
+1. the balance since u are dealing with just one currency, just the user id and balance
+
+TABLE RELATIONSHIPS
+
+user to balance, one to one
+user to transactions, one to many
+user to orders, one to many
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
