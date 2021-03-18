@@ -24,9 +24,14 @@ namespace Stuck.Repository.Infrastructure
 
 
         public async Task<IEnumerable<Stock>> GetAllAsync() => await _context.Stocks.ToListAsync();
+        public async Task<IEnumerable<StockDto>> GetAllAsync2()
+        {
+            var stock = await _context.Stocks.ToListAsync();
+            return mapper.Map<IEnumerable<StockDto>>(stock);
+        }
 
-        
-          // I want to pick all the stocks whose id match what the user wants 
+
+        // I want to pick all the stocks whose id match what the user wants 
         //plus the market capitalization of that stock
         public async Task<Stock> GetbyIdAsync(int stockId) => await _context.Stocks.Where(s => s.Id == stockId).FirstOrDefaultAsync();
 
@@ -79,16 +84,6 @@ namespace Stuck.Repository.Infrastructure
         }
 
 
-        //public async Task UpdateStockAsync(Stocks stocks)
-        //{
-        //   var g =  await _context.Stockss.FindAsync(stocks.Id);
-        //    _context.Update(g);
-
-        //    await _context.SaveChangesAsync();
-        //}
-
-
-
         public  async Task UpdateStockAsync(Stock stocks)
         {
             _context.Update(stocks);
@@ -107,15 +102,12 @@ namespace Stuck.Repository.Infrastructure
         // returns true if 1 or more entries were saved or changed
         public async Task<bool> SaveChangesAsync() => await _context.SaveChangesAsync() > 0;
 
-        public async  Task<IEnumerable<StockDto>> GetAllAsync2()
-        {
-           var stock =  await _context.Stocks.ToListAsync();
-            return mapper.Map<IEnumerable<StockDto>>(stock);
-        }
+        
 
         public Task<IEnumerable<StockDto>> BuyStock(decimal currentBalance, string stockSymbol, decimal stockPrice)
         {
-            throw new NotImplementedException();
+            _context.Stocks
+               
         }
 
         public Task<decimal> CalculateStockValue(int numberOfStocks, decimal stockPrice)

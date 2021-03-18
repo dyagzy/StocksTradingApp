@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0QH+6JuUkHzvQXGZ8S6qKX5OtlCGDUboXL7OaC1VFNL+vLNbzF0q7x98Ow9Dnomjas6s38e3z9jR+qWswsZLxQ==",
+  "dgSpecHash": "gOzwrqGDqUwmjj9As3+Von0vVWv94Yyei7/44OF3dpeeh4XkoSFsaB43014i1dNi5NaF6NiTpqgGvnHFPu53Xw==",
   "success": true,
   "projectFilePath": "C:\\Users\\DanielOyagha\\Documents\\Personal\\Projects\\StockTradingApp\\StocksTrading\\StocksTrading.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.3.nupkg.sha512",
+    "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.3\\microsoft.aspnetcore.identity.ui.5.0.3.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -41,7 +42,8 @@
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
-    "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\5.0.3\\microsoft.extensions.fileproviders.embedded.5.0.3.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.3\\microsoft.extensions.identity.core.5.0.3.nupkg.sha512",
     "C:\\Users\\DanielOyagha\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.3\\microsoft.extensions.identity.stores.5.0.3.nupkg.sha512",
