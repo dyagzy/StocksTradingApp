@@ -18,7 +18,7 @@ namespace Stuck.Repository
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Balance> Balances { get; set; }
         public DbSet<Stock> Stocks { get; set; }
-        public Transaction Transactions { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
 
         public DbSet<Security> Securities { get; set; } // to be removed later

@@ -106,8 +106,9 @@ namespace Stuck.Repository.Infrastructure
 
         public Task<IEnumerable<StockDto>> BuyStock(decimal currentBalance, string stockSymbol, decimal stockPrice)
         {
-            _context.Stocks
-               
+            //_context.Stocks
+            throw new NotImplementedException();
+
         }
 
         public Task<decimal> CalculateStockValue(int numberOfStocks, decimal stockPrice)

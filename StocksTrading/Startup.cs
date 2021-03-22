@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,13 +9,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Stuck.Repository;
+using Stuck.Repository.Configuration;
 using Stuck.Repository.Infrastructure;
 using Stuck.Repository.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace StocksTrading
@@ -44,19 +48,43 @@ namespace StocksTrading
 
             // Configure Identity
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
-            {
-                options.Password.RequireDigit = true;
-                options.Password.RequireLowercase = true;
-                options.Password.RequiredLength = 5;
-            }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
-            
-            //configure authetication
+           
+            //services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            //{
+            //    options.Password.RequireDigit = true;
+            //    options.Password.RequireLowercase = true;
+            //    options.Password.RequiredLength = 5;
+            //}).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
-            services.AddAuthentication( auth =>
-            {
-                auth.DefaultAuthenticateScheme = jwr
-            })
+            //configure authetication
+            services.Configure<JwtConfig>(Configuration.GetSection("JwtConfig"));
+
+            services.AddAuthentication(auth =>
+           {
+               auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+               auth.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+               auth.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+           }).AddJwtBearer(jwt =>
+           {
+               var key = Encoding.ASCII.GetBytes(Configuration["JwtConfig:Secret"]);
+               jwt.SaveToken = true;
+               jwt.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuerSigningKey = true,
+                   IssuerSigningKey = new SymmetricSecurityKey(key),
+                   ValidateIssuer = false,
+                   ValidateAudience = false,
+                   ValidateLifetime = true,
+                   RequireExpirationTime = false
+               };
+
+           });
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+
 
 
             //services.AddIdentityCore<ApplicationUser>()
@@ -72,7 +100,7 @@ namespace StocksTrading
 
             //});
 
-            
+
             services.AddCors(option =>
             {
                 option.AddPolicy("allowedOrigin", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
